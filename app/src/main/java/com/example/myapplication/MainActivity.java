@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String s = editText.getText().toString();
                 int C = Integer.parseInt(s);
-                int F = 273 + C;
+                int F = (1.8*C)+32;
                 textView.setText("The ans is " + F);
             }
         });
